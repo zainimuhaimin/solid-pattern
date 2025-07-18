@@ -37,6 +37,8 @@ public class ReportController {
      *     sebagai keynya, dan function Identity itu sendiri.
      *     sisanya tinggal bikin generate report function dan tinggal lu panggil deh variable yang lu inisiasi tadi
      *     lalu getOrDefault(ambil dari request, default function yang mau lo lembar).
+     *
+     * 4. Liskov's Subtitution Principle (LSP) itu ada di Bird Controller
      */
 
     @Autowired
