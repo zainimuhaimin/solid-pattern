@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "0742f99f-e6d0-409e-953e-0e67b84c52f1",
+		"name": "SOLID Pattern",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18730899"
+	},
+	"item": [
+		{
+			"name": "Single Responsibility Principle (SRP)",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/report/send?content=&to=muhaimin&subject=ReportToday",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"report",
+						"send"
+					],
+					"query": [
+						{
+							"key": "content",
+							"value": ""
+						},
+						{
+							"key": "to",
+							"value": "muhaimin"
+						},
+						{
+							"key": "subject",
+							"value": "ReportToday"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Open Closed Principle (OCP)",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/report/generate?reportType=WordReportGenerator",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"report",
+						"generate"
+					],
+					"query": [
+						{
+							"key": "reportType",
+							"value": "WordReportGenerator"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Liskov's Subtitution Principle (LSP)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/bird?bird=penguin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bird"
+					],
+					"query": [
+						{
+							"key": "bird",
+							"value": "penguin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Interface Segregation Principle (ISP)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/bird/crown",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bird",
+						"crown"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dependency Inversion Principle (DIP)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/payment",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"payment"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
